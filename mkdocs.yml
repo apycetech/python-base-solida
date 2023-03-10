@@ -1,0 +1,52 @@
+site_name: Python Base Sólida
+site_url: https://pbs.apycetech.com.br/
+repo_url: https://github.com/apycetech/python-base-solida
+repo_name: apycetech/python-base-solida
+site_description: Livro que ensina Python para iniciantes em programação
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: pink
+      toggle:
+        icon: material/lightbulb
+        name: Mudar para o modo escuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/lightbulb-outline
+        name: Mudar para o modo claro
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+nav:
+  - Página Inicial: index.md
+  - 01. Sobre o Livro:
+    - Conteúdo: 01_sobre_o_livro/conteudo.md
+    - Projetos: 01_sobre_o_livro/projetos.md
+    - Este livro é para você?: 01_sobre_o_livro/este-livro-e-para-voce.md
+    - Informações técnicas e legais: 01_sobre_o_livro/informacoes-tecnicas-e-legais.md
+  - teste.md
+
+extra_css:
+- css/termynal.css
+extra_javascript:
+- js/termynal.js
+- js/custom.js
